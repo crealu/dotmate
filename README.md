@@ -19,11 +19,16 @@ The logo that gets drawn uses data from an array of bezier curve points defined 
 
 &nbsp;
 ## Make an animation
-1: Add dots by clicking in the canvas.
-2: Choose to use background or fill.
-3: Set lerp speed and stroke weight.
-4: Press 'Animate'.
+1. Add dots by clicking in the canvas.
+2. Choose to use background or fill.
+3. Set lerp speed and stroke weight.
+4. Press 'Animate'.
 
 &nbsp;
 ## Demo
 ![alt text](./public/img/dotmate-demo.mp4)
+
+<video>
+  <source src="./public/img/dotmate-demo.mp4"
+          type="video/mp4">
+</video
