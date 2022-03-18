@@ -14,11 +14,9 @@ The logo that gets drawn uses data from an array of bezier curve points defined 
 
 &nbsp;
 ## Examples
-<img src="./public/img/logo-drawing-1.png" width="350" title="hover text">
-
 ![alt text](./public/img/logo-drawing-1.png)
-![alt text](./public/img/logo-drawing-1.png)
-![alt text](./public/img/logo-drawing-1.png)
+![alt text](./public/img/logo-drawing-2.png)
+![alt text](./public/img/logo-drawing-3.png)
 
 &nbsp;
 ## Make an animation
@@ -29,3 +27,4 @@ The logo that gets drawn uses data from an array of bezier curve points defined 
 
 &nbsp;
 ## Demo
+![alt text](./public/img/dotmate-demo.mov)
