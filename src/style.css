@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Comfortaa&display=swap');
+
+body {
+	font-family: 'Nunito';
+	background: #171717;
+	margin: 0px;
+}
+
+.app {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: calc(100vh - 200px);
+	top: 100px;
+}
+
+.drawing-interface {
+	position: relative;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	width: 100%;
+}
+
+.controls {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+	width: 100%;
+	height: 500px;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.toggle-btn {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	border: none;
+	filter: brightness(0.9);
+	cursor: pointer;
+}
+
+.toggle-btn:hover {
+	filter: brightness(1.0);
+}
+
+.toggle-drawing-btn {
+	background: #d96e6e;
+}
+
+.toggle-fill-btn {
+	background: #fbec63;
+}
+
+.toggle-bg-btn {
+	background: #fbbb63;
+}
+
+.toggle-animate-btn {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 50%;
+	background: #b06ed9;
+}
+
+.animation-controls div {
+	display: grid;
+	grid-template-columns: 30% 20% 50%;
+}
+
+.animation-controls div p {
+	color: white;
+	display: inline-block;
+	float: left;
+}
+
+.dot {
+	display: grid;
+	grid-template-columns: 20% 30% 30%;
+	width: 100%;
+	border-bottom: 1px solid #8c8c8cf5;
+  background: #333333;
+  color: white;
+}
+
+.dot p:nth-child(1) {
+	padding-left: 8px;
+}
+
+.dot p:nth-child(2) {
+	padding-left: 10px;
+}
+
+input {
+	width: 30px;
+	height: 20px;
+	padding: 4px 8px;
+	margin: 0px 10px;
+	background: black;
+	border: none;
+	border-radius: 4px;
+	position: relative;
+	top: -2px;
+	color: white;
+}
+
+input:focus-visible {
+	outline: none;
+}
+
+input[type='range'] {
+	-webkit-appearance: none;
+	height: 10px;
+	background-color: #8ee09a;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	cursor: ew-resize;
+	background: white;
+	cursor: pointer;
+}
+
+.range-input {
+	position: relative;
+	display: inline-block;
+	width: inherit;
+	padding: 0px;
+	top: 20px;
+}
+
+#defaultCanvas0 {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
