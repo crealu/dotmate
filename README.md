@@ -11,7 +11,6 @@ An animation interface for stylistic and randomized logo animations.
 This app can be used to create a logo animation based on dots that the user draws.
 The logo that gets drawn uses data from an array of bezier curve points defined in logo.js.
 
-
 &nbsp;
 ## Examples
 ![alt text](./public/img/logo-drawing-1.png)
@@ -27,4 +26,4 @@ The logo that gets drawn uses data from an array of bezier curve points defined 
 
 &nbsp;
 ## Demo
-![alt text](./public/img/dotmate-demo.mov)
+![alt text](./public/img/dotmate-demo.mp4)
