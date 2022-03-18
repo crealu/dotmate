@@ -26,9 +26,4 @@ The logo that gets drawn uses data from an array of bezier curve points defined 
 
 &nbsp;
 ## Demo
-![alt text](./public/img/dotmate-demo.mp4)
-
-<video>
-  <source src="./public/img/dotmate-demo.mp4"
-          type="video/mp4">
-</video
+![alt text](https://youtu.be/KZo1nunNM_k)
