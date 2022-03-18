@@ -25,5 +25,4 @@ The logo that gets drawn uses data from an array of bezier curve points defined 
 4. Press 'Animate'.
 
 &nbsp;
-## Demo
-![alt text](https://youtu.be/KZo1nunNM_k)
+<a href="https://youtu.be/KZo1nunNM_k" target="_blank">Demo</a>
