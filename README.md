@@ -1,7 +1,7 @@
 # Dotmate
 An animation interface for stylistic and randomized logo animations.
 <a href="https://dotmate.herokuapp.com/" target="_blank">Dotmate</a>
-![alt text](./public/img/animation.gif)
+
 
 &nbsp;
 ## Usage
@@ -28,3 +28,6 @@ The logo that gets drawn uses data from an array of bezier curve points defined 
 
 &nbsp;
 <a href="https://youtu.be/KZo1nunNM_k" target="_blank">Demo</a>
+
+&nbsp;
+![alt text](./public/img/animation.gif)
