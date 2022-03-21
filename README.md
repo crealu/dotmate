@@ -1,6 +1,7 @@
 # Dotmate
 An animation interface for stylistic and randomized logo animations.
 <a href="https://dotmate.herokuapp.com/" target="_blank">Dotmate</a>
+![alt text](./public/img/animation.gif)
 
 &nbsp;
 ## Usage
