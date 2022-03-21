@@ -29,21 +29,20 @@ function drawDots(p5, lines, currLine, isDrawing) {
   });
 }
 
-function redraw(p5, event, dots, current, update, drawing, useDrag) {
+function redraw(p5, event, dots, current, drawing, useDrag) {
 	if (!drawing) {
 		const mouseX = event.layerX - 250;
 		const mouseY = event.layerY - 250;
 		if (useDrag != undefined) {
 			dots[current][0] = mouseX;
 			dots[current][1] = mouseY;
-			update(dots);
-			useDrag();
+			return dots;
 		} else {
 			for (let i = 0; i < dots.length; i++) {
 				if (getVicinity(mouseX, mouseY, dots[i][0], dots[i][1])) {
 					dots[i][0] = mouseX;
 					dots[i][1] = mouseY;
-					update(i);
+					return i;
 				}
 			}
 		}
@@ -57,4 +56,11 @@ const getVicinity = (mouseX, mouseY, dotX, dotY) => {
   )
 }
 
-export { drawGuide, drawDots, drawDot, redraw };
+const onCanvas = (e) => {
+	return (
+		(e.pageX > window.innerWidth/2 && e.pageX < window.innerWidth) &&
+		(e.pageY < window.innerHeight - 200 && e.pageY > 150)
+	)
+}
+
+export { drawGuide, drawDots, drawDot, redraw, onCanvas };

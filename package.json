@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server",
     "build": "webpack --mode=production",
-    "dev-front": "webpack serve --open --hot",
-    "dev-back": "nodemon server"
+    "devfront": "webpack serve --open --hot",
+    "devback": "nodemon server"
   },
   "keywords": [],
   "author": "",
