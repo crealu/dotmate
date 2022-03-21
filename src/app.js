@@ -7,7 +7,6 @@ import Canvas from './components/Canvas';
 const App = () => {
 	const [state, dispatch] = useReducer(reducer, initialState);
 
-
 	return (
 		<AnimationContext.Provider value={{state, dispatch}}>
 			<div className="app">
