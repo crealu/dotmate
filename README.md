@@ -2,7 +2,6 @@
 An animation interface for stylistic and randomized logo animations.
 <a href="https://dotmate.herokuapp.com/" target="_blank">Dotmate</a>
 
-
 &nbsp;
 ## Usage
 1. Clone this repository.
