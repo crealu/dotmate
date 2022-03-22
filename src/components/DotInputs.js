@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { AnimationContext } from '../state/context';
 
 const shadowStyle = {
-	boxShadow: 'inset 0px 0px 10px white',
+  boxShadow: 'inset 0px 0px 10px white',
 }
 
 const noShadowStyle = {
-	boxShadow: 'none',
+  boxShadow: 'none',
 }
 
 const DotInput = ({ tabIndex, data, onClick, current }) => {
