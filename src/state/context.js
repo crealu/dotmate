@@ -3,27 +3,27 @@ import { createContext } from 'react'
 export const AnimationContext = createContext();
 
 export const initialState = {
-	dots: [],
-	dotVectors: [],
-	morphVectors: [],
-	logoVectors: [],
-	currentDot: 0,
-	count: 0,
-	drawing: true,
-	animating: false,
-	lerpSpeed: 0.11,
-	strokeWeight: 0.1,
-	hasFill: false,
-	hasBackground: false
+  dots: [],
+  dotVectors: [],
+  morphVectors: [],
+  logoVectors: [],
+  currentDot: 0,
+  count: 0,
+  drawing: true,
+  animating: false,
+  lerpSpeed: 0.11,
+  strokeWeight: 0.1,
+  hasFill: false,
+  hasBackground: false
 };
 
 export function reducer(state, action) {
-	switch (action.type) {
-		case "add dot":
-			return {
-				...state,
-				dots: [...state.dots, ...[action.payload]]
-			}
+  switch (action.type) {
+    case "add dot":
+      return {
+        ...state,
+        dots: [...state.dots, ...[action.payload]]
+      }
     case "increment":
       return {
         ...state,
@@ -74,7 +74,7 @@ export function reducer(state, action) {
         ...state,
         dotVectors: [...action.payload]
       }
-		default:
-			return state;
+    default:
+      return state;
 	}
 }
