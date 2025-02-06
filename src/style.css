@@ -143,3 +143,23 @@ input[type='range']::-webkit-slider-thumb {
 	position: relative;
 	margin: 0 auto;
 }
+
+/* mobile */
+@media (max-width: 800px) and (min-width: 200px) {
+	.drawing-interface {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.controls {
+		height: auto;
+	}
+
+	.app {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		top: 0px;
+		width: 90%;
+		height: auto;
+	}
+}
