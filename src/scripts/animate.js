@@ -12,7 +12,10 @@ function loadVectors(p5, morphVectors, logoVectors) {
 	for (let i = 0; i < logoPoints.length; i++) {
 		logoVectors.push(vectorFromPoints(logoPoints[i]));
 		morphVectors.push([
-			p5.createVector(), p5.createVector(), p5.createVector(), p5.createVector()
+			p5.createVector(),
+			p5.createVector(),
+			p5.createVector(),
+			p5.createVector()
 		]);
 	}
 }
@@ -55,6 +58,7 @@ function morph(
       dv4.lerp(lv4, lerpSpeed);
     }
   }
+
 	if (useBackground) {
 		p5.background(81);
 	}

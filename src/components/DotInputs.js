@@ -46,7 +46,7 @@ const DotInputs = () => {
           tabIndex={idx}
           data={dot}
           onClick={selectDot}
-          current={state.current}
+          current={state.currentDot}
         />
       ))}
     </div>

@@ -57,7 +57,7 @@ export function reducer(state, action) {
     case "set current":
       return {
         ...state,
-        current: action.payload
+        currentDot: action.payload
       }
     case "toggle animating":
       return {
@@ -76,5 +76,5 @@ export function reducer(state, action) {
       }
     default:
       return state;
-	}
+  }
 }
