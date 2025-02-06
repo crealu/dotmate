@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AnimationContext } from '../state/context';
+import { AnimationContext } from '../../state/context';
 
 const shadowStyle = {
   boxShadow: 'inset 0px 0px 10px white',

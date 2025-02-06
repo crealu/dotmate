@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AnimationContext } from '../state/context';
+import { AnimationContext } from '../../state/context';
 
 const Slider = ({ text, data, max, update }) => {
   return (

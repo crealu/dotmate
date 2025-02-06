@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { AnimationContext } from '../state/context';
-import { resetVectors } from '../scripts/animate';
+import { AnimationContext } from '../../state/context';
+import { resetVectors } from '../../scripts/animate';
 
 const DrawButton = () => {
   const {state, dispatch} = useContext(AnimationContext);

@@ -1,7 +1,7 @@
 import React from 'react';
-import Controls from './Controls';
-import Canvas from './Canvas';
-import { DrawButton, AnimateButton } from './SpecialButtons';
+import Controls from './p5/Controls';
+import Canvas from './p5/Canvas';
+import { DrawButton, AnimateButton } from './p5/SpecialButtons';
 
 const AppP5 = () => {
  return (

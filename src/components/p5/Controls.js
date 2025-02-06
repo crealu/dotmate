@@ -1,5 +1,5 @@
 import React, { useReducer, useContext } from 'react';
-import { AnimationContext } from '../state/context';
+import { AnimationContext } from '../../state/context';
 import Sliders from './Sliders';
 import DotInputs from './DotInputs';
 

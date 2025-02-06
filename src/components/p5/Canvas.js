@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { AnimationContext } from '../state/context';
-import { drawGuide, drawDots, drawDot, redraw, onCanvas } from '../scripts/draw';
-import { morph, loadVectors, resetVectors } from '../scripts/animate';
+import { AnimationContext } from '../../state/context';
+import { drawGuide, drawDots, drawDot, redraw, onCanvas } from '../../scripts/draw';
+import { morph, loadVectors, resetVectors } from '../../scripts/animate';
 import Sketch from 'react-p5';
 
 const Canvas = () => {
