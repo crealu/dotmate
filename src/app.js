@@ -1,25 +1,24 @@
 import React, { useState, useReducer } from 'react';
 import { initialState, reducer, AnimationContext } from './state/context';
+import { useKeyPress } from './scripts/useKeyPress';
 import AppP5 from './components/AppP5';
 
-// import { DrawButton, AnimateButton } from './components/SpecialButtons';
-// import Controls from './components/Controls';
-// import Canvas from './components/Canvas';
-
 const App = () => {
- const [state, dispatch] = useReducer(reducer, initialState);
+  const [p5Mode, setp5Mode] = useState(true);
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const renderView = () => {
+    return p5Mode ? <AppP5 /> : 'appGL';
+  }
+
+  useKeyPress('m', () => {
+    console.log('tab pressed');
+    setp5Mode(!p5Mode);
+  });
 
   return (
     <AnimationContext.Provider value={{ state, dispatch }}>
-      <AppP5 />
-{/*      <div className="app">
-        <DrawButton />
-        <div className="drawing-interface">
-          <Controls />
-          <Canvas />
-        </div>
-        <AnimateButton />
-      </div>*/}
+      {renderView()}
     </AnimationContext.Provider>
   )
 }
