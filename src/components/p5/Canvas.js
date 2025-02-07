@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { AnimationContext } from '../../state/context';
 import { drawGuide, drawDots, drawDot, redraw, onCanvas } from '../../scripts/draw';
 import { morph, loadVectors, resetVectors } from '../../scripts/animate';
@@ -6,10 +6,16 @@ import Sketch from 'react-p5';
 
 const Canvas = () => {
   const {state, dispatch} = useContext(AnimationContext);
+  const [width, setWidth] = useState(500);
+  const [height, setHeight] = useState(500);
 
   function setup(p5) {
     const canvasWrapper = document.getElementsByClassName('canvas-wrapper')[0];
-    const canvas = p5.createCanvas(500, 500).parent(canvasWrapper);
+    const theWidth = window.innerWidth < 500 ? window.innerWidth - 40 : 500;
+    const theHeight = theWidth < 500 ? theWidth : 500;
+    setWidth(theWidth);
+    setHeight(theHeight);
+    const canvas = p5.createCanvas(width, height).parent(canvasWrapper);
     loadVectors(p5, state.morphVectors, state.logoVectors);
   }
 
@@ -25,12 +31,12 @@ const Canvas = () => {
         state.hasFill,
         state.hasBackground
       );
-      drawGuide(p5);
+      drawGuide(p5, width, height);
 		} else {
       p5.strokeWeight(1);
       p5.background(80);
-      drawGuide(p5);
-      drawDots(p5, state.dots, state.currentDot, state.drawing);
+      drawGuide(p5, width, height);
+      drawDots(p5, state.dots, state.currentDot, state.drawing, width, height);
     }
   }
 
@@ -72,6 +78,13 @@ const Canvas = () => {
       payload: dotVectorArray
     });
   }
+
+  useEffect(() => {
+    if (window.innerWidth < 500) {
+      setWidth(window.innerWidth);
+      setHeight(window.innerWidth)
+    }
+  }, [])
 
   return (
     <div className="canvas-wrapper">

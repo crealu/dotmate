@@ -1,6 +1,28 @@
 import logoPoints from './logo.js';
 
 function loadVectors(p5, morphVectors, logoVectors) {
+	let scaleFactor = 1.0;
+
+	if (window.innerWidth < 500) {
+		scaleFactor = window.innerWidth / 500;
+
+		let difference = 500 - window.innerWidth;
+		console.log(difference);
+
+		console.log(scaleFactor);
+		console.log(logoPoints[0][0]);
+
+		for (let a = 0; a < logoPoints.length; a++) {
+			let b = logoPoints[a].map(point => {
+				return (point - difference) * scaleFactor;
+			});
+
+			logoPoints[a] = b;
+		}
+
+		console.log(logoPoints[0][0]);
+	}
+
 	function vectorFromPoints(arr) {
 		let v1 = p5.createVector(arr[0], arr[1]);
 		let v2 = p5.createVector(arr[2], arr[3]);

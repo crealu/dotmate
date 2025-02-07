@@ -138,6 +138,10 @@ input[type='range']::-webkit-slider-thumb {
 	top: 20px;
 }
 
+.canvas-wrapper {
+	overflow: hidden;
+}
+
 #defaultCanvas0 {
 	display: block;
 	position: relative;
@@ -161,5 +165,20 @@ input[type='range']::-webkit-slider-thumb {
 		top: 0px;
 		width: 90%;
 		height: auto;
+	}
+
+	.d-inputs {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) and (min-width: 200px) {
+	#defaultCanvas0 {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+/*		transform: scale(calc(100vh / 100vh * 2.0));*/
+/*		width: 90vw;
+		height: 50vh;*/
 	}
 }

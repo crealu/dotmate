@@ -1,8 +1,8 @@
 // canvas dimensions
-const width = 500;
-const height = 500;
+// const width = 500;
+// const height = 500;
 
-function drawGuide(p5) {
+function drawGuide(p5, width, height) {
 	p5.stroke(150);
 	p5.line(width/2, 10, width/2, height-10);
 	p5.line(10, height/2, width-10, height/2);
@@ -15,7 +15,7 @@ function drawDot(p5, mouseX, mouseY, count) {
   return [x, y];
 }
 
-function drawDots(p5, lines, currLine, isDrawing) {
+function drawDots(p5, lines, currLine, isDrawing, width, height) {
   p5.translate(width/2, height/2);
   lines.forEach((v, i) => {
     const currentRGB = i == currLine
