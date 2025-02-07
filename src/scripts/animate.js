@@ -2,11 +2,12 @@ import logoPoints from './logo.js';
 
 function loadVectors(p5, morphVectors, logoVectors) {
 	let scaleFactor = 1.0;
+	let difference;
 
 	if (window.innerWidth < 500) {
 		scaleFactor = window.innerWidth / 500;
 
-		let difference = 500 - window.innerWidth;
+		difference = 500 - window.innerWidth;
 		console.log(difference);
 
 		console.log(scaleFactor);
